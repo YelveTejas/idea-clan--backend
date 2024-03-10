@@ -1,6 +1,6 @@
 // models/Lecture.js
 
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const lectureSchema = new mongoose.Schema({
   courseId: { type: mongoose.Schema.Types.ObjectId, ref: 'Course', required: true },
